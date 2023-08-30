@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
 
         int deposit = 500;  // начальный счет
-        int replenishment = 900;  // сумма пополнения
+        int replenishment = 1100;  // сумма пополнения
 
         int bonus = replenishment > 1000 ? replenishment / 100 : 0;
 
@@ -16,7 +16,7 @@ public class Main {
 
 
         System.out.println("Количество бонусов " + bonus);
-        System.out.println("Итоговая сумма " + (deposit + bonus));
+        System.out.println("Итоговая сумма " + (deposit + replenishment + bonus));
 
     }
 }
